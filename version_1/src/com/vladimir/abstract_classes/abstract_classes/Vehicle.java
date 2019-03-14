@@ -2,7 +2,7 @@ package com.vladimir.abstract_classes.abstract_classes;
 
 public abstract class Vehicle {
     private String description, typeOfFuel, typeOfTransmission; // Описание, тип топлива, тип коробки передач
-    private int amountOfWheels, amountOfFuel, weight, power; // количество колёс, количество топлива(в литрах), вес машины
+    private int amountOfWheels, amountOfFuel, weight, power, tirePressure; // количество колёс, количество топлива(в литрах), вес машины
     private boolean isClear; //чистая ли машина
     public String getDescription(){
         return description;
@@ -24,6 +24,9 @@ public abstract class Vehicle {
     }
     public int getPower(){
         return power;
+    }
+    public int getTirePressure(){
+        return tirePressure;
     }
     public boolean getIsClear(){
         return isClear;
@@ -49,16 +52,10 @@ public abstract class Vehicle {
     public void setPower(int power){
         this.power = power;
     }
+    public void setTirePressure(int tirePressure){
+        this.tirePressure = tirePressure;
+    }
     public void setIsClear(boolean isClear) {
         this.isClear = isClear;
-    }
-    public void openTheDoors(){
-        System.out.println("Открываем двери транспортного средства с описанием " + getDescription() + ".");
-    }
-    public void openTheHood(){
-        System.out.println("Открываем капот транспортного средства с описанием " + getDescription() + ".");
-    }
-    public void openTheTrunk(){
-        System.out.println("Открываем багажник транспортного средства с описанием " + getDescription() + ".");
     }
 }

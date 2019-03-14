@@ -1,9 +1,6 @@
 package com.vladimir.abstract_classes;
 
-import com.vladimir.abstract_classes.classes.Kamaz;
-import com.vladimir.abstract_classes.classes.Scales;
-import com.vladimir.abstract_classes.classes.ToyotaCamry;
-import com.vladimir.abstract_classes.classes.TuningService;
+import com.vladimir.abstract_classes.classes.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +31,26 @@ public class Main {
         scales.weighVehicle(toyotaCamry0);
         System.out.println("\n");
         scales.weighVehicle(kamaz0);
+        System.out.println("\n");
+
+        /*
+        Юзаем интерфейсы
+         */
+
+        tuningService.setTirePressure(toyotaCamry0);
+        System.out.println("\n");
+        tuningService.setTirePressure(kamaz0);
+        System.out.println("\n");
+
+        /*
+        По понятиям
+         */
+
+        LadaPriora ladaPriora = new LadaPriora();
+        ladaPriora.Scream();
+        System.out.println("\n");
+
+        System.out.println("\n");
+        tuningService.isElite(ladaPriora);
     }
 }

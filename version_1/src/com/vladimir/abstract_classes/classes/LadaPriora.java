@@ -1,11 +1,13 @@
 package com.vladimir.abstract_classes.classes;
 
-import com.vladimir.abstract_classes.abstract_classes.Truck;
 
-public class Kamaz extends Truck {
-    private String description = "Камаз", typeOfFuel = "дизель", typeOfTransmission = "автоматическая коробка передач";
-    private int amountOfWheels = 6, amountOfFuel = 0, weight = 7000, power = 260, tirePressure = 5; // tirePressure - давление в шинах, 5 атмосфер
-    private boolean isClear;
+import com.vladimir.abstract_classes.abstract_classes.Car;
+import com.vladimir.abstract_classes.abstract_classes.interfaces.GarageTuning;
+
+public class LadaPriora extends Car implements GarageTuning {
+    private String description = "Lada Priora", typeOfFuel = "бензин", typeOfTransmission = "ручная коробка передач";
+    private int amountOfWheels = 4, amountOfFuel = 0, weight = 1100, power = 120, tirePressure = 2; // tirePressure - давление в шинах, 2 атмосферы
+    private boolean isClear = false;
 
     @Override
     public String getDescription() {
@@ -78,12 +80,22 @@ public class Kamaz extends Truck {
     }
 
     public void openTheDoors() {
-        System.out.println("Открываем двери т/с марки " + description + ".");
+        System.out.println("Открываем двери автомобиля " + description + ".");
     }
     public void openTheHood() {
-        System.out.println("Открываем капот т/с марки " + description + ".");
+        System.out.println("Открываем капот автомобиля " + description + ".");
     }
     public void openTheTrunk() {
-        System.out.println("Открываем багажник т/с марки " + description + ".");
+        System.out.println("Открываем багажник автомобиля " + description + ".");
+    }
+
+
+    @Override
+    public void Scream() {
+        System.out.println("АААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА");
+    }
+    @Override
+    public String getDescript(){
+        return ("Lada Priora");
     }
 }

@@ -1,10 +1,13 @@
 package com.vladimir.abstract_classes.classes;
 
 import com.vladimir.abstract_classes.abstract_classes.Car;
+import com.vladimir.abstract_classes.abstract_classes.Service;
 import com.vladimir.abstract_classes.abstract_classes.Truck;
 import com.vladimir.abstract_classes.abstract_classes.Vehicle;
+import com.vladimir.abstract_classes.abstract_classes.interfaces.GarageTuning;
+import com.vladimir.abstract_classes.abstract_classes.interfaces.Pressure;
 
-public class TuningService {
+public class TuningService extends Service implements Pressure {
     public void tuneVehicle(Vehicle vehicle){
         System.out.println("Начальная мощность транспортного средства марки " + vehicle.getDescription() + " - " + vehicle.getPower() + " л.с.\nТюнингуем...");
         vehicle.setPower(vehicle.getPower() + 100);
@@ -25,5 +28,16 @@ public class TuningService {
         System.out.println("Моем транспортное средство марки " + vehicle.getDescription() + ".");
         vehicle.setIsClear(true);
         System.out.println("Транспортное средство марки " + vehicle.getDescription() + " теперь чистое!");
+    }
+
+    @Override
+    public void setTirePressure(Vehicle vehicle){
+        System.out.println("Начальное значение давления в шинах у транспортного средства марки " + vehicle.getDescription() + " - " + vehicle.getTirePressure() + " атм.");
+        vehicle.setTirePressure(vehicle.getTirePressure() + 1);
+        System.out.println("Накачиваем шины...\nКонечное значение давления в шинах у транспортного средства марки " + vehicle.getDescription() + " - " + vehicle.getTirePressure() + " атм.");
+    }
+
+    public void isElite(GarageTuning vehicle){
+        System.out.println("Машина марки " + vehicle.getDescript() + " затюнена по понятиям!");
     }
 }

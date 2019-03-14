@@ -4,7 +4,7 @@ import com.vladimir.abstract_classes.abstract_classes.Car;
 
 public class ToyotaCamry extends Car {
     private String description = "Toyota Camry", typeOfFuel = "бензин", typeOfTransmission = "автоматическая коробка передач";
-    private int amountOfWheels = 4, amountOfFuel = 0, weight = 1300, power = 120;
+    private int amountOfWheels = 4, amountOfFuel = 0, weight = 1300, power = 120, tirePressure = 2; // tirePressure - давление в шинах, 2 атмосферы
     private boolean isClear;
 
     @Override
@@ -35,6 +35,11 @@ public class ToyotaCamry extends Car {
     public int getPower() {
         return power;
     }
+
+    public int getTirePressure(){
+        return tirePressure;
+    }
+
     @Override
     public boolean getIsClear() {
         return isClear;
@@ -67,15 +72,17 @@ public class ToyotaCamry extends Car {
     public void setPower(int power) {
         this.power = power;
     }
-    @Override
+
+    public void setTirePressure(int tirePressure){
+        this.tirePressure = tirePressure;
+    }
+
     public void openTheDoors() {
         System.out.println("Открываем двери автомобиля " + description + ".");
     }
-    @Override
     public void openTheHood() {
         System.out.println("Открываем капот автомобиля " + description + ".");
     }
-    @Override
     public void openTheTrunk() {
         System.out.println("Открываем багажник автомобиля " + description + ".");
     }
