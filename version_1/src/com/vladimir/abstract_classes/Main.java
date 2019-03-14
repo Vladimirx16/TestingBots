@@ -1,5 +1,10 @@
 package com.vladimir.abstract_classes;
 
+import com.vladimir.abstract_classes.classes.Kamaz;
+import com.vladimir.abstract_classes.classes.Scales;
+import com.vladimir.abstract_classes.classes.ToyotaCamry;
+import com.vladimir.abstract_classes.classes.TuningService;
+
 public class Main {
     public static void main(String[] args) {
         ToyotaCamry toyotaCamry0 = new ToyotaCamry();

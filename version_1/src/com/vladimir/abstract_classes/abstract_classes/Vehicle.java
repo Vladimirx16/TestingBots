@@ -1,4 +1,4 @@
-package com.vladimir.abstract_classes;
+package com.vladimir.abstract_classes.abstract_classes;
 
 public abstract class Vehicle {
     private String description, typeOfFuel, typeOfTransmission; // Описание, тип топлива, тип коробки передач

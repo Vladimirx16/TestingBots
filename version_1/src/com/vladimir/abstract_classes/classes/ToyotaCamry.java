@@ -1,4 +1,6 @@
-package com.vladimir.abstract_classes;
+package com.vladimir.abstract_classes.classes;
+
+import com.vladimir.abstract_classes.abstract_classes.Car;
 
 public class ToyotaCamry extends Car {
     private String description = "Toyota Camry", typeOfFuel = "бензин", typeOfTransmission = "автоматическая коробка передач";

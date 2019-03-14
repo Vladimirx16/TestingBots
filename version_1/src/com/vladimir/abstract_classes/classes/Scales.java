@@ -1,4 +1,8 @@
-package com.vladimir.abstract_classes;
+package com.vladimir.abstract_classes.classes;
+
+import com.vladimir.abstract_classes.abstract_classes.Car;
+import com.vladimir.abstract_classes.abstract_classes.Truck;
+import com.vladimir.abstract_classes.abstract_classes.Vehicle;
 
 public class Scales { // Весы для взвешивания транспортных средств
     public void weighVehicle(Vehicle vehicle){

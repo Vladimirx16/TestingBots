@@ -1,4 +1,6 @@
-package com.vladimir.abstract_classes;
+package com.vladimir.abstract_classes.classes;
+
+import com.vladimir.abstract_classes.abstract_classes.Truck;
 
 public class Kamaz extends Truck {
     private String description = "Камаз", typeOfFuel = "дизель", typeOfTransmission = "автоматическая коробка передач";
