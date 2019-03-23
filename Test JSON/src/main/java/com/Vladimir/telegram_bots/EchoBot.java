@@ -1,13 +1,11 @@
-package com.Vladimir;
+package com.Vladimir.telegram_bots;
 
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendSticker;
-import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.api.objects.User;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class EchoBot extends TelegramLongPollingBot {
@@ -64,10 +62,10 @@ public class EchoBot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "Test Java Bot";
+        return "YOUR BOT NAME";
     }
 
     public String getBotToken() {
-        return "770765439:AAHRH7cjAcMDQvT5aZzuWTkpu0t_ZbKcVZQ";
+        return "YOUR TOKEN";
     }
 }
