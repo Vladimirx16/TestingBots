@@ -64,10 +64,10 @@ public class EchoBot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "YOUR BOT NAME";
+        return "Test Java Bot";
     }
 
     public String getBotToken() {
-        return "YOUR TOKEN";
+        return "770765439:AAHRH7cjAcMDQvT5aZzuWTkpu0t_ZbKcVZQ";
     }
 }
