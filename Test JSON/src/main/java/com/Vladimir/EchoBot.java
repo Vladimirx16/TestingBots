@@ -63,19 +63,6 @@ public class EchoBot extends TelegramLongPollingBot {
         }
     }
 
-    /*public void sendMsg(Message message, String text){
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.enableMarkdown(true);
-        sendMessage.setChatId(message.getChatId().toString());
-        sendMessage.setReplyToMessageId(message.getMessageId());
-        sendMessage.setText(text);
-        try{
-            execute(sendMessage);
-        } catch(TelegramApiException e){
-            e.printStackTrace();
-        }
-    }*/
-
     public String getBotUsername() {
         return "YOUR BOT NAME";
     }
