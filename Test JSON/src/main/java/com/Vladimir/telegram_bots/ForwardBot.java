@@ -56,7 +56,7 @@ public class ForwardBot extends TelegramLongPollingBot {
             }
         } else if (message.hasText() && message.getText().length() > 12 && message.getText().substring(0, 12).equals("/add_channel")) {
             System.out.println("INFO: Добавляем канал...");
-            int lengthOfString = update.getMessage().getText().length(); // Записываем длину полученной строки }
+            int lengthOfString = update.getMessage().getText().length(); // Записываем длину полученной строки
             String channel = update.getMessage().getText().substring(12, lengthOfString); // Извлекаем из строки /add_channel ... название канала, дабы добавить в список каналов
             channel_list.add(channel);
             sendMessage.setText("Канал успешно добавлен в список!");
@@ -67,7 +67,7 @@ public class ForwardBot extends TelegramLongPollingBot {
             }
         } else if (message.hasText() && message.getText().length() > 14 && message.getText().substring(0, 15).equals("/remove_channel")){
             System.out.println("INFO: Удаляем канал...");
-            int lengthOfString = update.getMessage().getText().length(); // Записываем длину полученной строки }
+            int lengthOfString = update.getMessage().getText().length(); // Записываем длину полученной строки
             String channel = update.getMessage().getText().substring(15, lengthOfString); // Извлекаем из строки /remove_channel ... название канала, дабы удалить из списка
             System.out.println(channel);
             if (channel_list.contains(channel)){
